@@ -1,0 +1,13 @@
+print('Computer : Guess what I think?')
+from random import randint
+num = randint(1, 1000)
+str1 = 'good'
+while num:
+    answer = eval(input())
+    if answer < num:
+        print('%.d is too small,try again' % answer)
+    elif answer > num:
+        print('%.d answer is too large,try again' % answer)
+    elif answer == num:
+        print('%.dis right,' % answer + str1)
+        num = False
