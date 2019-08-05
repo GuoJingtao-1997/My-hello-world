@@ -1,6 +1,6 @@
 print('Computer : Guess what I think?')
-from random import randint
-num = randint(1, 1000)
+import random.randint
+num = random.randint(1, 1000)
 str1 = 'good'
 while num:
     answer = eval(input())
